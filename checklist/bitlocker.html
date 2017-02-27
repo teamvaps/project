@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Process of setting up bitlocker for windows 10</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="Content-Language" content="en-us">
+	<!-- meta http-equiv="Content-Type" content="text/html; charset=windows-1252"-->
+	<title>BitLocker</title>
+</head>
+
+<body background ="check2.jpg">
+<form action="#" th:action="@{/BitLocker}" th:object="${BitLocker}" method="post">
+
+<p align="center"><font color="#90EE90" size="6"><b>Checklist for creating BitLocker</b></font></p>
+<p align="center">&nbsp;</p>
+<p align="center"><font color="#40E0D0"><b>Computer Name: </b> 
+<input name="T1" size="20" style="font-weight: 700"><b>&nbsp;&nbsp;&nbsp; 
+Date: </b> <input name="T2" size="20" style="font-weight: 700"><b>&nbsp; Ticket:</b><input name="T3" size="20" style="font-weight: 700"><b> 
+Tech:</b><input name="T4" size="20" style="font-weight: 700"></p>
+<p>&nbsp;</p>
+<table border="1" width="100%">
+	<tr>
+		<td width="653">
+		<font size="4">
+		<input type="checkbox" name="C1" value="ON" style="font-weight: 700"></font><b><span style="line-height: 107%"><font size="4">
+		</font> 
+		</span>
+		<span style="line-height: 107%; font-family: Calibri,sans-serif">
+		<font size="4">Turn on Bitlocker</font></span></b></td>
+	</tr>
+	<tr>
+		<td width="653">
+		<font size="4">
+		<input type="checkbox" name="C2" value="ON" style="font-weight: 700"></font><span style="line-height: 107%; font-family: Calibri,sans-serif; font-weight: 700"><font size="4">TPM</font><font size="4"> 
+		admin</font></span></td>
+	</tr>
+	<tr>
+		<td width="653">
+		<font size="4">
+		<input type="checkbox" name="C5" value="ON" style="font-weight: 700"></font><span style="line-height: 107%; font-family: Calibri,sans-serif; font-weight: 700"><font size="4">Bios 
+		TPM Security </font> </span></td>
+	</tr>
+	<tr>
+		<td width="653">
+		<font size="4">
+		<input type="checkbox" name="C7" value="ON" style="font-weight: 700"></font><b><span style="line-height: 107%"><font size="4">
+		</font> 
+		</span>
+		<span style="line-height: 107%; font-family: Calibri,sans-serif">
+		<font size="4">change password or close</font></span></b></td>
+	</tr>
+	<tr>
+		<td width="653">
+		<font size="4">
+		<input type="checkbox" name="C9" value="ON" style="font-weight: 700"></font><b><span style="line-height: 107%"><font size="4">
+		</font>
+		</span>
+		<span style="line-height: 107%; font-family: Calibri,sans-serif">
+		<font size="4">Turn on Bilt Locker</font></span></b></td>
+	</tr>
+	<tr>
+		<td width="653">
+		<font size="4">
+		<input type="checkbox" name="C11" value="ON" style="font-weight: 700"></font><b><span style="line-height:107%"><font size="4">
+		</font> 
+		</span>
+		<span style="line-height: 107%; font-family: Calibri,sans-serif">
+		<font size="4">Save to a file (RA-LV…..)</font></span></b></td>
+	</tr>
+	<tr>
+		<td width="653">
+		<font size="4">
+		<input type="checkbox" name="C15" value="ON" style="font-weight: 700"></font><b><font size="4">
+		</font>
+		<span style="font-family: Calibri,sans-serif"><font size="4">Set a paasword</font></span></b></td>
+	</tr>
+	</table>
+
+	<p><input type="submit" value="Submit" name="B1"><input type="reset" value="Reset" name="B2"><input type="reset" value="Delete" name="B3"><input type="reset" value="Search" name="B4"></p>
+</form>
+</body>
+
+</html>
